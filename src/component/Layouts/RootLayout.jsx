@@ -14,8 +14,8 @@ import { handleSidebarFixed } from "@/Redux/features/sideBar/sideBarSlice";
 import { motion } from "framer-motion";
 import Navbar from "../UI/Layouts/Navbar/Navbar";
 import SidebarMenu from "../UI/Layouts/Sidebar/SidebarMenu";
-import logo1 from "../../assets/img/logo-new.png";
-import logo2 from "../../assets/img/favi.png";
+import logo2 from "../../assets/img/LOGO.png";
+import logo1 from "../../assets/img/logo2.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { SettingOutlined } from "@ant-design/icons";
@@ -24,9 +24,8 @@ import Footer from "../UI/Layouts/Footer";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { useTheme } from "next-themes";
 import { FaCalendarAlt, FaListAlt } from "react-icons/fa";
-import { LuCalendarClock } from "react-icons/lu";
-import { AiOutlineAudit } from "react-icons/ai";
-import { IoIosHelpCircle } from "react-icons/io";
+import { RiSettingsFill } from "react-icons/ri";
+import { MdAssignment } from "react-icons/md";
 
 const menuItem = [
   {
@@ -37,86 +36,69 @@ const menuItem = [
   {
     path: "/admin/practice",
     name: "Practice",
-    icon: <BiLibrary />,
+    icon: <RiSettingsFill />,
   },
   {
     path: "/admin/provider",
     name: "Provider",
-    icon: <BiLibrary />,
+    icon: <BiUser />,
   },
   {
     path: "/",
     name: "Assignments",
-    icon: <BiCalendarWeek />,
+    icon: <MdAssignment />,
     subRoute: [
       {
-        path: "/admin/assignments/listView",
-        name: "My Schedule",
+        path: "/admin/assignments/production-summary",
+        name: "Production Summary",
         icon: <FaListAlt />,
       },
       {
-        path: "/admin/assignments/calender-view",
-        name: "Calender View",
+        path: "/admin/assignments/production-report",
+        name: "Production Report",
         icon: <FaCalendarAlt />,
       },
     ],
   },
   {
-    path: "/admin/practice",
-    name: "Practice",
-    icon: <BiLibrary />,
+    path: "/",
+    name: "Reminders",
+    icon: <BiCalendarWeek />,
+    subRoute: [
+      {
+        path: "/admin/reminders/reminder",
+        name: "Reminder",
+        icon: <FaListAlt />,
+      },
+      {
+        path: "/admin/reminders/summary",
+        name: "Summary",
+        icon: <FaCalendarAlt />,
+      },
+    ],
   },
   {
-    path: "/admin/practice",
-    name: "Practice",
-    icon: <BiLibrary />,
+    path: "/",
+    name: "Reports",
+    icon: <BiSolidReport />,
+    subRoute: [
+      {
+        path: "/admin/report/report-with-all-status",
+        name: "Report with all status",
+        icon: <FaListAlt />,
+      },
+      {
+        path: "/admin/report/report-with-latest-status",
+        name: "Report with latest status",
+        icon: <FaCalendarAlt />,
+      },
+    ],
   },
   {
-    path: "/admin/practice",
-    name: "Practice",
-    icon: <BiLibrary />,
+    path: "/admin/settings",
+    name: "Setting",
+    icon: <SettingOutlined />,
   },
-
-  // {
-  //   path: "/admin/biographic/info",
-  //   name: "Biographic",
-  //   icon: <BiUser />,
-  // },
-  // {
-  //   path: "/admin/patients",
-  //   name: "Patients (+)",
-  //   icon: <BiUserCircle />,
-  // },
-  // // {
-  // //   path: "/admin/staffs",
-  // //   name: "Staffs",
-  // //   icon: <BiUser />,
-  // // },
-  // {
-  //   path: "/admin/clock-in",
-  //   name: "Clock In",
-  //   icon: <LuCalendarClock />,
-  // },
-  // {
-  //   path: "/admin/timesheet",
-  //   name: "Timesheet",
-  //   icon: <AiOutlineAudit />,
-  // },
-  // // {
-  // //   path: "/report",
-  // //   name: "Report",
-  // //   icon: <BiSolidReport />,
-  // // },
-  // {
-  //   path: "/settings/program-data",
-  //   name: "Settings",
-  //   icon: <SettingOutlined />,
-  // },
-  // {
-  //   path: "https://therapypms.freshdesk.com/support/solutions/82000458039",
-  //   name: "Help",
-  //   icon: <IoIosHelpCircle />,
-  // },
 ];
 
 const initialDropState = {};
@@ -218,7 +200,7 @@ const RootLayout = ({ children }) => {
                 <div
                   className={
                     isHovering
-                      ? " w-[250px] sidebar-box h-[100vh] sidebar-transition"
+                      ? " w-[300px] sidebar-box h-[100vh] sidebar-transition"
                       : " w-[70px] sidebar-box h-[100vh] sidebar-transition"
                   }
                 >
@@ -227,7 +209,7 @@ const RootLayout = ({ children }) => {
                       <>
                         <div className=" transition-all text-primary">
                           <Image
-                            src={logo1}
+                            src={logo2}
                             width={"100%"}
                             height={"auto"}
                             alt="Picture of the author"
@@ -242,7 +224,7 @@ const RootLayout = ({ children }) => {
                         <div className="text-lg">
                           {" "}
                           <Image
-                            src={logo2}
+                            src={logo1}
                             width={"100%"}
                             height={"auto"}
                             alt="Picture of the author"

@@ -36,7 +36,7 @@ const Add = () => {
           <div>Create Patient</div>
         </button>
 
-        <button className="text-[14px] text-secondary px-[15px] w-full py-2 rounded-sm clink flex items-center font-medium gap-2 transition-all hover:bg-slate-100 hover:text-secondary">
+        {/* <button className="text-[14px] text-secondary px-[15px] w-full py-2 rounded-sm clink flex items-center font-medium gap-2 transition-all hover:bg-slate-100 hover:text-secondary">
           <lord-icon
             src="https://cdn.lordicon.com/qjuahhae.json"
             trigger="loop"
@@ -58,7 +58,7 @@ const Add = () => {
           ></lord-icon>
           <BiSolidUserDetail className="text-lg" />
           <div onClick={handleEligibility}>Request Eligibility</div>
-        </button>
+        </button> */}
       </div>
       {clicked && (
         <div>

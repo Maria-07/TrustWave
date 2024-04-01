@@ -129,7 +129,7 @@ const Navbar = ({ handle, handleSidebar }) => {
             </button>
           </div>
           <div className="flex items-center gap-6 text-[25px] text-dark">
-            <div className="h-11">
+            {/* <div className="h-11">
               {!punch ? (
                 <span className="text-xs px-2 py-1 bg-orange-400 text-white rounded-xl">
                   OUT
@@ -139,7 +139,7 @@ const Navbar = ({ handle, handleSidebar }) => {
                   IN
                 </span>
               )}
-            </div>
+            </div> */}
             <div>
               {!handle.active ? (
                 <div>
@@ -206,11 +206,11 @@ const Navbar = ({ handle, handleSidebar }) => {
                 <IoMdNotificationsOutline className="hover:text-primary" />
               </Dropdown>
             </div>
-            <div title="Chat">
+            {/* <div title="Chat">
               <span onClick={openChatUrl}>
                 <IoChatboxEllipsesOutline className="hover:text-primary" />
               </span>
-            </div>
+            </div> */}
             <div>
               <Dropdown
                 dropdownRender={() => (

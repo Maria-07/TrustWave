@@ -19,8 +19,8 @@ color {
 
 :root {
   --primary-font: 14px;
-  --primary-color: #4F709C;
-  --secondary-shade: #213555;
+  --primary-color: #378CE7;
+  --secondary-shade: #2B50A7;
   --lighter-shade: #e0f3ff;
   --background-color: #f3f8ff;
   --dark-bg: #2c333e
@@ -35,12 +35,12 @@ body {
 }
 
 .graph-box {
-    border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .thead {
-    border: 1px solid #808080;
-    border-radius: 5px 5px 0 0;
+  border: 1px solid #808080;
+  border-radius: 5px 5px 0 0;
 }
 
 .login-bg {
@@ -122,7 +122,7 @@ body {
 }
 
 .Global .dropdown-container:focus-within {
-  box-shadow: #00a1b100 0 0 0 0px !important; 
+  box-shadow: #00a1b100 0 0 0 0px !important;
 }
 
 .Global .gray {
