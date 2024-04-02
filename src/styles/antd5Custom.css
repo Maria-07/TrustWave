@@ -125,8 +125,9 @@
 .ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody>tr>td,
 .ant-table-wrapper .ant-table.ant-table-small tfoot>tr>th,
 .ant-table-wrapper .ant-table.ant-table-small tfoot>tr>td {
-  padding: 4px 8px;
+  padding: 4px 4px;
   text-align: center;
+  font-size: 13px;
 }
 
 .ant-table-wrapper .ant-table.ant-table-small .ant-table-title,
@@ -135,11 +136,10 @@
 .ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody>tr>th,
 .ant-table-wrapper .ant-table.ant-table-small tfoot>tr>th,
 .ant-table-wrapper .ant-table.ant-table-small tfoot>tr>td {
-  padding: 1px 8px;
+  padding: 1px 2px 0px 2px;
 }
 
 .ant-table-wrapper .ant-table-cell-ellipsis .ant-table-column-title {
-
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: keep-all;
@@ -156,7 +156,7 @@
 .ant-table-body>table>thead>tr>th,
 .ant-table-summary>table>thead>tr>th {
   /* border-inline-end: 1px solid #f0f0f0; */
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
   text-align: center;
