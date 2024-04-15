@@ -1,11 +1,14 @@
 import { practiceData } from "@/component/Data/Data";
 import RootLayout from "@/component/Layouts/RootLayout";
 import PracticeAction from "@/component/UI/Practice/PracticeAction";
-import { Table } from "antd";
+import Cards from "@/component/UI/Practice/PracticeCards/Cards";
+import { Switch, Table } from "antd";
 import React, { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 
 const PracticePage = () => {
+  const [cardView, setCardView] = useState(false);
+
   //! Optimized function to get dynamic filter value-text
   const generateFilterValues = (data, columnKey) => {
     const uniqueValues = [...new Set(data?.map((d) => d[columnKey]))];
@@ -104,25 +107,43 @@ const PracticePage = () => {
   });
   return (
     <div>
-      {" "}
-      <h1 className=" text-orange-500 text-base">Practice</h1>
+      <div className="flex items-center gap-2 justify-between flex-wrap">
+        <h1 className=" text-orange-500 text-base">Practice</h1>
+        <Switch
+          checkedChildren="Card View"
+          unCheckedChildren="List View"
+          defaultChecked
+          onClick={() => setCardView(!cardView)}
+        />
+      </div>
+
       <div>
-        <div className=" overflow-scroll py-3 ">
-          <Table
-            //   rowKey={(record) => record.timesheet_id} //warning issue solve ar jnno unique id rowKey hisabey use hobey
-            pagination={false} //pagination dekhatey chailey just 'true' korey dilei hobey
-            size="small"
-            className=" text-xs font-normal"
-            columns={columns}
-            bordered
-            dataSource={practiceData} //Which data chunk you want to show in table
-            // For fixed header table at top
-            //   rowSelection={{
-            //     ...rowSelection,
-            //   }}
-            onChange={handleChange}
-          />
-        </div>
+        {cardView ? (
+          <>
+            <div className="h-[40%] mx-auto w-[100%] sm:w-[70%]">
+              <div className="overflow-y-scroll">
+                <Cards practiceData={practiceData}> </Cards>
+              </div>
+            </div>
+          </>
+        ) : (
+          <div className=" overflow-scroll py-3 ">
+            <Table
+              //   rowKey={(record) => record.timesheet_id} //warning issue solve ar jnno unique id rowKey hisabey use hobey
+              pagination={false} //pagination dekhatey chailey just 'true' korey dilei hobey
+              size="small"
+              className=" text-xs font-normal"
+              columns={columns}
+              bordered
+              dataSource={practiceData} //Which data chunk you want to show in table
+              // For fixed header table at top
+              //   rowSelection={{
+              //     ...rowSelection,
+              //   }}
+              onChange={handleChange}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
