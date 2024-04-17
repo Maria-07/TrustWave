@@ -296,7 +296,7 @@
 }
 
 
-.dcm-button {
+.cred-button {
     padding-left: 11px;
     padding-right: 8px;
     padding-top: 7px;
@@ -317,12 +317,12 @@
     border: 1px solid var(--primary-color);
 }
 
-.dcm-button:hover {
+.cred-button:hover {
     background-image: linear-gradient(141deg, var(--secondary-shade) 0%, var(--secondary-shade) 100%);
     color: rgb(255, 255, 255);
 }
 
-.dcm-close-button {
+.cred-close-button {
     padding-left: 11px;
     padding-right: 8px;
     padding-top: 7px;
@@ -344,12 +344,12 @@
     border: 0.5px solid #b91c1c;
 }
 
-.dcm-close-button:hover {
+.cred-close-button:hover {
     background-image: linear-gradient(141deg, #b91c1c 0%, #f87171 100%);
 
 }
 
-.dcm-clear-button {
+.cred-clear-button {
     padding: 6px 4px 4px;
     /* padding-left: 11px;
   padding-right: 8px;
@@ -371,13 +371,13 @@
     transition: ease-in-out 0.1s;
 }
 
-.dcm-clear-button:hover {
+.cred-clear-button:hover {
     background-image: linear-gradient(141deg, #b91c1c 0%, #b91c1c 100%);
     color: #fff;
     /* border: 0.5px solid #b91c1c; */
 }
 
-.dcm-input-button {
+.cred-input-button {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 12px;
@@ -388,7 +388,7 @@
     border-radius: 3px;
 }
 
-.dcm-all-select-button {
+.cred-all-select-button {
     padding-left: 11px;
     padding-right: 8px;
     padding-top: 1px;
@@ -409,15 +409,15 @@
     border: 1px solid var(--primary-color);
 }
 
-.dcm-all-select-button:hover {
+.cred-all-select-button:hover {
     background-image: linear-gradient(141deg, var(--secondary-shade) 0%, var(--primary-color) 100%);
 }
 
-.dcm-input-button:hover {
+.cred-input-button:hover {
     background-image: linear-gradient(141deg, var(--secondary-shade) 0%, var(--primary-color) 100%);
 }
 
-.dcm-white-button {
+.cred-white-button {
     padding: 7px 5px 4px;
     font-family: 'Roboto',
         sans-serif;
@@ -436,13 +436,13 @@
     border: 1px solid rgb(255, 255, 255);
 }
 
-.dcm-white-button:hover {
+.cred-white-button:hover {
     color: #fff;
     background-color: var(--primary-color);
 
 }
 
-.dcm-modal-submit-button {
+.cred-modal-submit-button {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 500;
@@ -454,11 +454,11 @@
     transition: all ease-in-out 0.3s;
 }
 
-.dcm-modal-submit-button:hover {
+.cred-modal-submit-button:hover {
     background-color: #233867;
 }
 
-.dcm-modal-close-button {
+.cred-modal-close-button {
     font-size: 15px;
     font-weight: 500;
     border-radius: 5px;
@@ -469,7 +469,7 @@
     transition: all ease-in-out 0.3s;
 }
 
-.dcm-modal-close-button:hover {
+.cred-modal-close-button:hover {
     background-color: #d9d9d9;
 }
 
