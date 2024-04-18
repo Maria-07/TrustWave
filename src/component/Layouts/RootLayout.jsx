@@ -157,7 +157,7 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>DCM</title>
+        <title>CredNGo</title>
         <meta
           name="description"
           content="This is Data Management Therapy : DTM, a CMS project made by next-js"

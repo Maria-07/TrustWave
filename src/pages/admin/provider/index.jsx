@@ -186,7 +186,10 @@ const ProviderPage = () => {
         ></CreateProviderModal>
       )}
       {Contacts && (
-        <ContactModal handleClose={Contacts} clicked={Contacts}></ContactModal>
+        <ContactModal
+          handleClose={handleContacts}
+          clicked={Contacts}
+        ></ContactModal>
       )}
     </div>
   );

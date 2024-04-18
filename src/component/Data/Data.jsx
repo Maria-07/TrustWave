@@ -1257,3 +1257,46 @@ export const contact = [
     status: "Khujirt",
   },
 ];
+
+export const production = [
+  {
+    id: 1,
+    task: "Gymnorhina tibicen",
+  },
+  {
+    id: 2,
+    task: "Plegadis falcinellus",
+  },
+  {
+    id: 3,
+    task: "Paroaria gularis",
+  },
+  {
+    id: 4,
+    task: "Morelia spilotes variegata",
+  },
+  {
+    id: 5,
+    task: "Bubalus arnee",
+  },
+  {
+    id: 6,
+    task: "Colaptes campestroides",
+  },
+  {
+    id: 7,
+    task: "Callipepla gambelii",
+  },
+  {
+    id: 8,
+    task: "Marmota caligata",
+  },
+  {
+    id: 9,
+    task: "Corallus hortulanus cooki",
+  },
+  {
+    id: 10,
+    task: "Platalea leucordia",
+  },
+];
