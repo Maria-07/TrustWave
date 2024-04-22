@@ -1,21 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { AiFillBank } from "react-icons/ai";
-import { BiData, BiDockTop } from "react-icons/bi";
+import { FaUsersCog } from "react-icons/fa";
 
 export const settingsSidebar = [
   {
-    icon: <BiData />,
-    link_name: "Program Data",
-    link: "/settings/program-data",
-  },
-  {
-    icon: <BiDockTop />,
-    link_name: "Domain",
-    link: "/settings/domain",
-  },
-  {
-    icon: <AiFillBank />,
-    link_name: "Organization",
-    link: "/settings/organization",
+    icon: <FaUsersCog />,
+    link_name: "User Management",
+    link: "/admin/settings/all-user",
   },
 ];

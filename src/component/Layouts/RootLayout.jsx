@@ -95,7 +95,7 @@ const menuItem = [
     ],
   },
   {
-    path: "/admin/settings",
+    path: "/admin/settings/all-user",
     name: "Setting",
     icon: <SettingOutlined />,
   },
