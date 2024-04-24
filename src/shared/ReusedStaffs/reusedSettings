@@ -1,0 +1,16 @@
+import RootLayout from "@/component/Layouts/RootLayout";
+import SettingLayout from "@/component/Layouts/SettingLayout";
+
+const PracticeAssign = () => {
+  return <div></div>;
+};
+
+export default PracticeAssign;
+
+PracticeAssign.getLayout = function getLayout(page) {
+  return (
+    <RootLayout>
+      <SettingLayout>{page}</SettingLayout>
+    </RootLayout>
+  );
+};

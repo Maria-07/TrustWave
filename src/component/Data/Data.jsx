@@ -1852,3 +1852,56 @@ export const allUser = [
     status: true,
   },
 ];
+
+export const Contracts = [
+  {
+    id: 1,
+    contract_name: "Maurene",
+    dashboard: false,
+  },
+  {
+    id: 2,
+    contract_name: "Romola",
+    dashboard: false,
+  },
+  {
+    id: 3,
+    contract_name: "Jarid",
+    dashboard: true,
+  },
+  {
+    id: 4,
+    contract_name: "Tabbitha",
+    dashboard: false,
+  },
+  {
+    id: 5,
+    contract_name: "Rivi",
+    dashboard: false,
+  },
+  {
+    id: 6,
+    contract_name: "Joachim",
+    dashboard: true,
+  },
+  {
+    id: 7,
+    contract_name: "Powell",
+    dashboard: false,
+  },
+  {
+    id: 8,
+    contract_name: "Iggie",
+    dashboard: false,
+  },
+  {
+    id: 9,
+    contract_name: "Barbara",
+    dashboard: true,
+  },
+  {
+    id: 10,
+    contract_name: "Jaquenetta",
+    dashboard: false,
+  },
+];

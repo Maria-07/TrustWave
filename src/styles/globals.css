@@ -26,6 +26,21 @@ color {
   --dark-bg: #2c333e
 }
 
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
