@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { FaFileContract, FaUsersCog } from "react-icons/fa";
+import { FaComments, FaFileContract, FaUsersCog } from "react-icons/fa";
 import {
   MdDriveFileRenameOutline,
   MdOutlineAssignmentReturned,
@@ -7,6 +7,8 @@ import {
 } from "react-icons/md";
 import { LuFileType2 } from "react-icons/lu";
 import { TiDocumentText } from "react-icons/ti";
+import { IoIosOptions, IoIosSettings } from "react-icons/io";
+import { GrSettingsOption } from "react-icons/gr";
 
 export const settingsSidebar = [
   {
@@ -50,8 +52,23 @@ export const settingsSidebar = [
     link: "/admin/settings/task",
   },
   {
-    icon: <MdTask />,
+    icon: <GrSettingsOption />,
     link_name: "Sop Option",
     link: "/admin/settings/setting-sop-option",
+  },
+  {
+    icon: <IoIosOptions />,
+    link_name: "SOP",
+    link: "/admin/settings/sop",
+  },
+  {
+    icon: <FaComments />,
+    link_name: "User Comment",
+    link: "/admin/settings/user-comment",
+  },
+  {
+    icon: <IoIosSettings />,
+    link_name: "Settings",
+    link: "/admin/settings/misc",
   },
 ];

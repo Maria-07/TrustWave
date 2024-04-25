@@ -107,8 +107,8 @@ const ProviderPage = () => {
 
   // Add action column
   columns.push({
-    title: "Action",
-    key: "action",
+    title: "Contact",
+    key: "contact",
     width: 100,
     render: (text, record) => (
       <div className="flex items-center justify-center">
