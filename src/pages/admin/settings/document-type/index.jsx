@@ -1,16 +1,16 @@
-import { Contracts, Contractss } from "@/component/Data/Data";
+import { DocumentTypes } from "@/component/Data/Data";
 import RootLayout from "@/component/Layouts/RootLayout";
 import SettingLayout from "@/component/Layouts/SettingLayout";
-import AddContractNameModal from "@/component/UI/Settings/ContractName/AddContractNameModal";
-import ContractNameAction from "@/component/UI/Settings/ContractName/ContractNameAction";
+import AddDocumentTypeModal from "@/component/UI/Settings/DocumentType/AddDocumentTypeModal";
+import DocumentTypeAction from "@/component/UI/Settings/DocumentType/DocumentTypeAction";
 import { Switch, Table } from "antd";
 import React, { useState } from "react";
 import { FaCircle, FaPlus } from "react-icons/fa";
 
-const ContractName = () => {
-  const [AddContractName, setAddContractName] = useState(false);
-  const handleAddContractName = () => {
-    setAddContractName(!AddContractName);
+const DocumentType = () => {
+  const [AddDocumentType, setAddDocumentType] = useState(false);
+  const handleAddDocumentType = () => {
+    setAddDocumentType(!AddDocumentType);
   };
 
   //! Optimized function to get dynamic filter value-text
@@ -50,7 +50,7 @@ const ContractName = () => {
     },
   };
 
-  const columns = Object.keys(Contracts[0])
+  const columns = Object.keys(DocumentTypes[0])
     .filter((key) => key !== "id") // Exclude 'id'
     .map((key, index) => ({
       title: key.replace(/_/g, " "), // Capitalize title
@@ -58,7 +58,7 @@ const ContractName = () => {
       dataIndex: key,
       key: key,
       width: index === 0 ? 110 : 100, // Adjust width for the action column
-      filters: generateFilterValues(Contracts, key),
+      filters: generateFilterValues(DocumentTypes, key),
       filterSearch: true,
       filteredValue: filteredInfo[key] || null,
       onFilter: (value, record) => {
@@ -105,26 +105,26 @@ const ContractName = () => {
     width: 100,
     render: (text, record) => (
       <div>
-        <ContractNameAction record={record}></ContractNameAction>
+        <DocumentTypeAction record={record}></DocumentTypeAction>
       </div>
     ),
   });
   return (
     <div>
       <div className="flex items-center justify-between gap-2 flex-wrap mb-4">
-        <h1 className=" text-orange-500 text-base ">Contracts Name</h1>
+        <h1 className=" text-orange-500 text-base ">Document Type </h1>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => handleAddContractName()}
+            onClick={() => handleAddDocumentType()}
             className="cred-button flex items-center gap-2"
           >
-            <FaPlus /> Add Contracts Name
+            <FaPlus /> Add Document Type
           </button>
           <button
             // onClick={() => handleAddContractName()}
             className="cred-button flex items-center gap-2"
           >
-            Export Contracts Name
+            Document Type
           </button>
         </div>
       </div>
@@ -137,25 +137,25 @@ const ContractName = () => {
               className=" text-xs font-normal"
               columns={columns}
               bordered
-              dataSource={Contracts}
+              dataSource={DocumentTypes}
               onChange={handleChange}
             />
           </div>
         </div>
       </div>
-      {AddContractName && (
-        <AddContractNameModal
-          handleClose={handleAddContractName}
-          clicked={AddContractName}
-        ></AddContractNameModal>
+      {AddDocumentType && (
+        <AddDocumentTypeModal
+          handleClose={handleAddDocumentType}
+          clicked={AddDocumentType}
+        ></AddDocumentTypeModal>
       )}
     </div>
   );
 };
 
-export default ContractName;
+export default DocumentType;
 
-ContractName.getLayout = function getLayout(page) {
+DocumentType.getLayout = function getLayout(page) {
   return (
     <RootLayout>
       <SettingLayout>{page}</SettingLayout>

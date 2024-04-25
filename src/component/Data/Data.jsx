@@ -1905,3 +1905,288 @@ export const Contracts = [
     dashboard: false,
   },
 ];
+
+export const ContractTypes = [
+  {
+    id: 1,
+    Contract_type: "Kylynn",
+  },
+  {
+    id: 2,
+    Contract_type: "Eddie",
+  },
+  {
+    id: 3,
+    Contract_type: "Ara",
+  },
+  {
+    id: 4,
+    Contract_type: "Andria",
+  },
+  {
+    id: 5,
+    Contract_type: "Terence",
+  },
+  {
+    id: 6,
+    Contract_type: "Hamnet",
+  },
+  {
+    id: 7,
+    Contract_type: "Bevon",
+  },
+  {
+    id: 8,
+    Contract_type: "Kerrill",
+  },
+  {
+    id: 9,
+    Contract_type: "Winifield",
+  },
+  {
+    id: 10,
+    Contract_type: "Martynne",
+  },
+];
+
+export const ContractStatuss = [
+  {
+    id: 1,
+    contract_status_name: "Stephine",
+    contract_status_group: "Halsall",
+    show_reminder: false,
+    show_restrict: true,
+  },
+  {
+    id: 2,
+    contract_status_name: "Ruby",
+    contract_status_group: "McQuaker",
+    show_reminder: true,
+    show_restrict: false,
+  },
+  {
+    id: 3,
+    contract_status_name: "Augusto",
+    contract_status_group: "Matfield",
+    show_reminder: true,
+    show_restrict: true,
+  },
+  {
+    id: 4,
+    contract_status_name: "Sukey",
+    contract_status_group: "Pelfer",
+    show_reminder: false,
+    show_restrict: false,
+  },
+  {
+    id: 5,
+    contract_status_name: "Devinne",
+    contract_status_group: "Gruby",
+    show_reminder: true,
+    show_restrict: false,
+  },
+  {
+    id: 6,
+    contract_status_name: "Leeanne",
+    contract_status_group: "Hawse",
+    show_reminder: false,
+    show_restrict: false,
+  },
+  {
+    id: 7,
+    contract_status_name: "Poppy",
+    contract_status_group: "Kiely",
+    show_reminder: true,
+    show_restrict: true,
+  },
+  {
+    id: 8,
+    contract_status_name: "Robers",
+    contract_status_group: "Dalmon",
+    show_reminder: false,
+    show_restrict: true,
+  },
+  {
+    id: 9,
+    contract_status_name: "Tallie",
+    contract_status_group: "Skelhorne",
+    show_reminder: false,
+    show_restrict: false,
+  },
+  {
+    id: 10,
+    contract_status_name: "Maximilien",
+    contract_status_group: "McGebenay",
+    show_reminder: true,
+    show_restrict: false,
+  },
+];
+
+export const DocumentTypes = [
+  {
+    id: 1,
+    document_type_name: "Pattin",
+  },
+  {
+    id: 2,
+    document_type_name: "Channa",
+  },
+  {
+    id: 3,
+    document_type_name: "Maureene",
+  },
+  {
+    id: 4,
+    document_type_name: "Sky",
+  },
+  {
+    id: 5,
+    document_type_name: "Kellina",
+  },
+  {
+    id: 6,
+    document_type_name: "Odille",
+  },
+  {
+    id: 7,
+    document_type_name: "Mozes",
+  },
+  {
+    id: 8,
+    document_type_name: "Melodie",
+  },
+  {
+    id: 9,
+    document_type_name: "Germaine",
+  },
+  {
+    id: 10,
+    document_type_name: "Georgeanne",
+  },
+];
+export const Specialtys = [
+  {
+    id: 1,
+    document_Specialty: "Tait",
+  },
+  {
+    id: 2,
+    document_Specialty: "Ed",
+  },
+  {
+    id: 3,
+    document_Specialty: "Deana",
+  },
+  {
+    id: 4,
+    document_Specialty: "Jude",
+  },
+  {
+    id: 5,
+    document_Specialty: "Felecia",
+  },
+  {
+    id: 6,
+    document_Specialty: "Blaire",
+  },
+  {
+    id: 7,
+    document_Specialty: "Loralyn",
+  },
+  {
+    id: 8,
+    document_Specialty: "Rubetta",
+  },
+  {
+    id: 9,
+    document_Specialty: "Melania",
+  },
+  {
+    id: 10,
+    document_Specialty: "Katalin",
+  },
+];
+export const Tasks = [
+  {
+    id: 1,
+    tasks_name: "Gustavo",
+  },
+  {
+    id: 2,
+    tasks_name: "Isaiah",
+  },
+  {
+    id: 3,
+    tasks_name: "Izaak",
+  },
+  {
+    id: 4,
+    tasks_name: "Beverlie",
+  },
+  {
+    id: 5,
+    tasks_name: "Jacqueline",
+  },
+  {
+    id: 6,
+    tasks_name: "Kale",
+  },
+  {
+    id: 7,
+    tasks_name: "Dinah",
+  },
+  {
+    id: 8,
+    tasks_name: "Hatty",
+  },
+  {
+    id: 9,
+    tasks_name: "Gardie",
+  },
+  {
+    id: 10,
+    tasks_name: "Caryl",
+  },
+];
+export const SopOptions = [
+  {
+    id: 1,
+    option_name: "Ginger",
+  },
+  {
+    id: 2,
+    option_name: "Darcy",
+  },
+  {
+    id: 3,
+    option_name: "Jereme",
+  },
+  {
+    id: 4,
+    option_name: "Antonino",
+  },
+  {
+    id: 5,
+    option_name: "Carlie",
+  },
+  {
+    id: 6,
+    option_name: "Skye",
+  },
+  {
+    id: 7,
+    option_name: "Gypsy",
+  },
+  {
+    id: 8,
+    option_name: "Michel",
+  },
+  {
+    id: 9,
+    option_name: "Thain",
+  },
+  {
+    id: 10,
+    option_name: "Far",
+  },
+];

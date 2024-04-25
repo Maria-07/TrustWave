@@ -1,16 +1,16 @@
-import { Contracts, Contractss } from "@/component/Data/Data";
+import { ContractTypes } from "@/component/Data/Data";
 import RootLayout from "@/component/Layouts/RootLayout";
 import SettingLayout from "@/component/Layouts/SettingLayout";
-import AddContractNameModal from "@/component/UI/Settings/ContractName/AddContractNameModal";
-import ContractNameAction from "@/component/UI/Settings/ContractName/ContractNameAction";
+import AddContractTypeModal from "@/component/UI/Settings/ContractType/AddContractTypeModal";
+import ContractTypeAction from "@/component/UI/Settings/ContractType/ContractTypeAction";
 import { Switch, Table } from "antd";
 import React, { useState } from "react";
 import { FaCircle, FaPlus } from "react-icons/fa";
 
-const ContractName = () => {
-  const [AddContractName, setAddContractName] = useState(false);
-  const handleAddContractName = () => {
-    setAddContractName(!AddContractName);
+const ContractType = () => {
+  const [AddContractType, setAddContractType] = useState(false);
+  const handleAddContractType = () => {
+    setAddContractType(!AddContractType);
   };
 
   //! Optimized function to get dynamic filter value-text
@@ -50,7 +50,7 @@ const ContractName = () => {
     },
   };
 
-  const columns = Object.keys(Contracts[0])
+  const columns = Object.keys(ContractTypes[0])
     .filter((key) => key !== "id") // Exclude 'id'
     .map((key, index) => ({
       title: key.replace(/_/g, " "), // Capitalize title
@@ -58,7 +58,7 @@ const ContractName = () => {
       dataIndex: key,
       key: key,
       width: index === 0 ? 110 : 100, // Adjust width for the action column
-      filters: generateFilterValues(Contracts, key),
+      filters: generateFilterValues(ContractTypes, key),
       filterSearch: true,
       filteredValue: filteredInfo[key] || null,
       onFilter: (value, record) => {
@@ -105,26 +105,20 @@ const ContractName = () => {
     width: 100,
     render: (text, record) => (
       <div>
-        <ContractNameAction record={record}></ContractNameAction>
+        <ContractTypeAction record={record}></ContractTypeAction>
       </div>
     ),
   });
   return (
     <div>
       <div className="flex items-center justify-between gap-2 flex-wrap mb-4">
-        <h1 className=" text-orange-500 text-base ">Contracts Name</h1>
+        <h1 className=" text-orange-500 text-base ">Contract Type </h1>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => handleAddContractName()}
+            onClick={() => handleAddContractType()}
             className="cred-button flex items-center gap-2"
           >
-            <FaPlus /> Add Contracts Name
-          </button>
-          <button
-            // onClick={() => handleAddContractName()}
-            className="cred-button flex items-center gap-2"
-          >
-            Export Contracts Name
+            <FaPlus /> Add Contract Type
           </button>
         </div>
       </div>
@@ -137,25 +131,25 @@ const ContractName = () => {
               className=" text-xs font-normal"
               columns={columns}
               bordered
-              dataSource={Contracts}
+              dataSource={ContractTypes}
               onChange={handleChange}
             />
           </div>
         </div>
       </div>
-      {AddContractName && (
-        <AddContractNameModal
-          handleClose={handleAddContractName}
-          clicked={AddContractName}
-        ></AddContractNameModal>
+      {AddContractType && (
+        <AddContractTypeModal
+          handleClose={handleAddContractType}
+          clicked={AddContractType}
+        ></AddContractTypeModal>
       )}
     </div>
   );
 };
 
-export default ContractName;
+export default ContractType;
 
-ContractName.getLayout = function getLayout(page) {
+ContractType.getLayout = function getLayout(page) {
   return (
     <RootLayout>
       <SettingLayout>{page}</SettingLayout>

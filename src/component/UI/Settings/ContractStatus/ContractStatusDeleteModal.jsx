@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { MdDeleteOutline, MdDone } from "react-icons/md";
 
-const ContractNameDeleteModal = ({ handleClose, clicked, record }) => {
+const ContractStatusDeleteModal = ({ handleClose, clicked, record }) => {
   return (
     <div>
       {" "}
@@ -63,4 +63,4 @@ const ContractNameDeleteModal = ({ handleClose, clicked, record }) => {
   );
 };
 
-export default ContractNameDeleteModal;
+export default ContractStatusDeleteModal;
