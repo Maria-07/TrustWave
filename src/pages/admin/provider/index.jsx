@@ -7,8 +7,10 @@ import CreateProviderModal from "@/component/UI/Admin/Provider/Modals/CreateProv
 import { MdAdd, MdContacts } from "react-icons/md";
 import Link from "next/link";
 import ContactModal from "@/component/UI/Admin/Provider/Modals/ContactModal";
+import { useRouter } from "next/router";
 
 const ProviderPage = () => {
+  const router = useRouter();
   const [faculty, setFaculty] = useState("");
 
   const [CreateProvider, setCreateProvider] = useState(false);
@@ -18,6 +20,13 @@ const ProviderPage = () => {
   const [Contacts, setContacts] = useState(false);
   const handleContacts = () => {
     setContacts(!Contacts);
+  };
+
+  const PIdHandler = (id) => {
+    if (id) {
+      localStorage.setItem("PId", id);
+      router.push(`/admin/provider/provider-info/${id}`);
+    }
   };
 
   //! Optimized function to get dynamic filter value-text
@@ -82,8 +91,15 @@ const ProviderPage = () => {
       },
       sortOrder: sortedInfo.columnKey === key ? sortedInfo.order : null,
       render: (text, record) => {
-        if (key === "Business_name" || key === "DBA_name") {
-          return <button className="">{text}</button>;
+        if (key === "name") {
+          return (
+            <button
+              onClick={() => PIdHandler(record.id)}
+              className="text-secondary"
+            >
+              {record?.name}
+            </button>
+          );
         } else if (key === "status") {
           return (
             <div className="flex items-center justify-center">
