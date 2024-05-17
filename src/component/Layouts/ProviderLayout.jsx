@@ -47,62 +47,26 @@ const ProviderLayout = ({ id, children }) => {
       link_name: "Contracts",
       link: `/admin/provider/contract-list/${ProviderId}`,
     },
-
     {
-      icon: <AiOutlineFileAdd />,
-      link_name: "Provider Vob",
-      link: `/provider/Providers/Provider-vob/${ProviderId}`,
+      icon: <RiMiniProgramLine />,
+      link_name: "General Document",
+      link: `/admin/provider/document/${ProviderId}`,
     },
     {
-      icon: <BiSolidUserRectangle />,
-      link_name: "Provider Authorization",
-      link: `/provider/Providers/Provider-authorization/${ProviderId}`,
+      icon: <RiMiniProgramLine />,
+      link_name: "Contract Document",
+      link: `/admin/provider/insurance-document/${ProviderId}`,
     },
     {
-      icon: <IoDocumentTextOutline />,
-      link_name: "Documents",
-      link: `/provider/Providers/Provider-documents/${ProviderId}`,
-    },
-    /*{
-      icon: <FaBusinessTime />,
-      link_name: "Provider Ledger",
-      link: `/provider/Providers/Provider-ledger/${ProviderId}`,
-    },
-    {
-      icon: <BiTimer />,
+      icon: <RiMiniProgramLine />,
       link_name: "Provider Portal",
-      link: `/provider/Providers/Provider-portal/${ProviderId}`,
+      link: `/admin/provider/provider-portal/${ProviderId}`,
     },
     {
-      icon: <IoCloudUploadOutline />,
-      link_name: "Provider Intake",
-      link: `/provider/Providers/Provider-intake/${ProviderId}`,
-    },*/
-    {
-      icon: <IoCall />,
-      link_name: "Call Log",
-      link: `/provider/Providers/Provider-callLog/${ProviderId}`,
+      icon: <RiMiniProgramLine />,
+      link_name: "Provider Activity",
+      link: `/admin/provider/provider-activity/${ProviderId}`,
     },
-    /*{
-      icon: <FaUsers />,
-      link_name: "Sibling",
-      link: `/provider/Providers/Provider-sibling/${ProviderId}`,
-    },
-    {
-      icon: <BiLogoPaypal />,
-      link_name: "Provider Payment",
-      link: `/provider/Providers/Provider-payment-info/${ProviderId}`,
-    },*/
-    {
-      icon: <BsClipboard2Data />,
-      link_name: "Session Notes",
-      link: `/provider/Providers/Provider-session-notes/${ProviderId}`,
-    },
-    /*{
-      icon: <AiOutlineFileText />,
-      link_name: "Clinicians Team",
-      link: `/provider/Providers/Provider-clinicians/${ProviderId}`,
-    },*/
   ];
 
   //! Theme system done

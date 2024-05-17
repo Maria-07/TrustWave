@@ -1,17 +1,19 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { providerContract } from "@/component/Data/Data";
+import { providerDocument } from "@/component/Data/Data";
 import ProviderLayout from "@/component/Layouts/ProviderLayout";
 import RootLayout from "@/component/Layouts/RootLayout";
 import ContractAction from "@/component/UI/Admin/Provider/Contracts/ContractAction";
-import CreateContractModal from "@/component/UI/Admin/Provider/Contracts/CreateContractModal";
+import AddDocumentModal from "@/component/UI/Admin/Provider/Documents/AddDocumentModal";
+import DocumentAction from "@/component/UI/Admin/Provider/Documents/DocumentAction";
+
 import { Table } from "antd";
 import React, { useState } from "react";
 import { MdAdd } from "react-icons/md";
 
 const documents = () => {
-  const [CreateContract, setCreateContract] = useState(false);
-  const handleCreateContract = () => {
-    setCreateContract(!CreateContract);
+  const [AddDocument, setAddDocument] = useState(false);
+  const handleAddDocument = () => {
+    setAddDocument(!AddDocument);
   };
 
   //! Optimized function to get dynamic filter value-text
@@ -53,7 +55,7 @@ const documents = () => {
     },
   };
 
-  const columns = Object.keys(providerContract[0])
+  const columns = Object.keys(providerDocument[0])
     .filter((key) => key !== "id") // Exclude 'id'
     .map((key, index) => ({
       title: key.replace(/_/g, " "), // Capitalize title
@@ -61,7 +63,7 @@ const documents = () => {
       dataIndex: key,
       key: key,
       width: index === 0 ? 110 : 100, // Adjust width for the action column
-      filters: generateFilterValues(providerContract, key),
+      filters: generateFilterValues(providerDocument, key),
       filterSearch: true,
       filteredValue: filteredInfo[key] || null,
       onFilter: (value, record) => {
@@ -103,19 +105,19 @@ const documents = () => {
     render: (text, record) => (
       <div>
         {" "}
-        <ContractAction record={record}></ContractAction>{" "}
+        <DocumentAction record={record}></DocumentAction>{" "}
       </div>
     ),
   });
   return (
     <div>
       <div className="flex items-center justify-between gap-2">
-        <h1 className=" text-orange-500 text-base">Contract List</h1>
+        <h1 className=" text-orange-500 text-base">Provider Documents</h1>
         <button
-          onClick={handleCreateContract}
+          onClick={handleAddDocument}
           className="cred-button flex items-center gap-1"
         >
-          <MdAdd className="text-lg" /> Create Contract
+          <MdAdd className="text-lg" /> Add Document
         </button>
       </div>
 
@@ -127,7 +129,7 @@ const documents = () => {
           className=" text-xs font-normal"
           columns={columns}
           bordered
-          dataSource={providerContract} //Which data chunk you want to show in table
+          dataSource={providerDocument} //Which data chunk you want to show in table
           // For fixed header table at top
           //   rowSelection={{
           //     ...rowSelection,
@@ -136,11 +138,11 @@ const documents = () => {
         />
       </div>
 
-      {CreateContract && (
-        <CreateContractModal
-          handleClose={handleCreateContract}
-          clicked={CreateContract}
-        ></CreateContractModal>
+      {AddDocument && (
+        <AddDocumentModal
+          handleClose={handleAddDocument}
+          clicked={AddDocument}
+        ></AddDocumentModal>
       )}
     </div>
   );

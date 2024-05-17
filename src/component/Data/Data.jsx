@@ -1328,6 +1328,381 @@ export const providerContract = [
   },
 ];
 
+export const providerDocument = [
+  {
+    id: 1,
+    document_type: "Linnie",
+    description:
+      "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+    uploaded_on: "8/27/2023",
+    created_by: "Stringtough",
+    expiry_date: "9/5/2023",
+    status: true,
+  },
+  {
+    id: 2,
+    document_type: "Cati",
+    description:
+      "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+    uploaded_on: "3/6/2024",
+    created_by: "Cookley",
+    expiry_date: "11/22/2023",
+    status: false,
+  },
+  {
+    id: 3,
+    document_type: "Lian",
+    description:
+      "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+    uploaded_on: "11/15/2023",
+    created_by: "Matsoft",
+    expiry_date: "7/9/2023",
+    status: false,
+  },
+  {
+    id: 4,
+    document_type: "Zitella",
+    description:
+      "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    uploaded_on: "2/16/2024",
+    created_by: "Biodex",
+    expiry_date: "11/8/2023",
+    status: false,
+  },
+  {
+    id: 5,
+    document_type: "Olympe",
+    description:
+      "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    uploaded_on: "11/20/2023",
+    created_by: "Tempsoft",
+    expiry_date: "5/30/2023",
+    status: true,
+  },
+  {
+    id: 6,
+    document_type: "Lindsy",
+    description:
+      "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    uploaded_on: "4/29/2024",
+    created_by: "Rank",
+    expiry_date: "8/16/2023",
+    status: true,
+  },
+  {
+    id: 7,
+    document_type: "Mitchael",
+    description:
+      "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+    uploaded_on: "12/31/2023",
+    created_by: "It",
+    expiry_date: "11/29/2023",
+    status: true,
+  },
+  {
+    id: 8,
+    document_type: "Bobbye",
+    description:
+      "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+    uploaded_on: "2/6/2024",
+    created_by: "It",
+    expiry_date: "5/15/2023",
+    status: true,
+  },
+  {
+    id: 9,
+    document_type: "Boris",
+    description:
+      "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+    uploaded_on: "9/22/2023",
+    created_by: "Lotstring",
+    expiry_date: "9/6/2023",
+    status: true,
+  },
+  {
+    id: 10,
+    document_type: "Tana",
+    description:
+      "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    uploaded_on: "4/12/2024",
+    created_by: "Bitwolf",
+    expiry_date: "9/4/2023",
+    status: true,
+  },
+];
+
+export const providerCOntractDoc = [
+  {
+    id: 1,
+    contract_name: "Britt",
+    document_type: "Yakovlev",
+    description: "byakovlev0@meetup.com",
+    uploaded_on: "11/1/2023",
+    created_by: "Carimune",
+  },
+  {
+    id: 2,
+    contract_name: "Waylon",
+    document_type: "Skinn",
+    description: "wskinn1@businesswire.com",
+    uploaded_on: "7/7/2023",
+    created_by: "Bufferin",
+  },
+  {
+    id: 3,
+    contract_name: "Yale",
+    document_type: "Thomelin",
+    description: "ythomelin2@soundcloud.com",
+    uploaded_on: "7/5/2023",
+    created_by: "Carelessweed",
+  },
+  {
+    id: 4,
+    contract_name: "Gabbie",
+    document_type: "Cundey",
+    description: "gcundey3@moonfruit.com",
+    uploaded_on: "2/28/2024",
+    created_by: "Fluticasone Propionate",
+  },
+  {
+    id: 5,
+    contract_name: "Terese",
+    document_type: "Beilby",
+    description: "tbeilby4@foxnews.com",
+    uploaded_on: "9/19/2023",
+    created_by: "Natural Progesterone",
+  },
+  {
+    id: 6,
+    contract_name: "Tamarah",
+    document_type: "Duly",
+    description: "tduly5@ehow.com",
+    uploaded_on: "2/8/2024",
+    created_by: "Opana",
+  },
+  {
+    id: 7,
+    contract_name: "Barde",
+    document_type: "Mc Elory",
+    description: "bmcelory6@instagram.com",
+    uploaded_on: "10/20/2023",
+    created_by: "FIBROMYALGIA",
+  },
+  {
+    id: 8,
+    contract_name: "Grantham",
+    document_type: "Brewis",
+    description: "gbrewis7@answers.com",
+    uploaded_on: "2/6/2024",
+    created_by: "Lomustine",
+  },
+  {
+    id: 9,
+    contract_name: "Evanne",
+    document_type: "Cluse",
+    description: "ecluse8@hibu.com",
+    uploaded_on: "2/8/2024",
+    created_by: "Film Coated Ibuprofen",
+  },
+  {
+    id: 10,
+    contract_name: "Porty",
+    document_type: "Kulic",
+    description: "pkulic9@senate.gov",
+    uploaded_on: "11/19/2023",
+    created_by: "Enulose",
+  },
+];
+
+export const providerShowDocuments = [
+  {
+    id: 1,
+    insurance_file: "Michele",
+    document_1: "Ghelarducci",
+    document_2: "sun.com",
+    document_4: "OXYCODONE HYDROCHLORIDE",
+  },
+  {
+    id: 2,
+    insurance_file: "Ashlin",
+    document_1: "Junkin",
+    document_2: "over-blog.com",
+    document_4: "Viagra",
+  },
+  {
+    id: 3,
+    insurance_file: "Kelly",
+    document_1: "Despenser",
+    document_2: "ucsd.edu",
+    document_4: "Silica 30 Special Order",
+  },
+  {
+    id: 4,
+    insurance_file: "Daphna",
+    document_1: "Marmon",
+    document_2: "disqus.com",
+    document_4: "FLU",
+  },
+  {
+    id: 5,
+    insurance_file: "Rayna",
+    document_1: "Angood",
+    document_2: "cdc.gov",
+    document_4: "ZONISAMIDE",
+  },
+  {
+    id: 6,
+    insurance_file: "Ellene",
+    document_1: "Harnell",
+    document_2: "un.org",
+    document_4:
+      "Buprenorphine hydrochloride and naloxone hydrochloride dihydrate",
+  },
+  {
+    id: 7,
+    insurance_file: "Leontyne",
+    document_1: "Barnwille",
+    document_2: "gravatar.com",
+    document_4: "Magnesium Sulfate",
+  },
+  {
+    id: 8,
+    insurance_file: "Arnaldo",
+    document_1: "Iveans",
+    document_2: "angelfire.com",
+    document_4: "English Walnut Pollen",
+  },
+  {
+    id: 9,
+    insurance_file: "Liv",
+    document_1: "Huonic",
+    document_2: "ask.com",
+    document_4: "Red Maple",
+  },
+  {
+    id: 10,
+    insurance_file: "Marigold",
+    document_1: "Ciobotaro",
+    document_2: "mapy.cz",
+    document_4: "Lansoprazole, Amoxicillin and Clarithromycin",
+  },
+];
+
+export const provideContractcopy = [
+  {
+    id: 1,
+    contract_name: "Beth",
+    document_type:
+      "Yves Saint Laurent Le Teint Encre De Peau Fusion Ink Foundation Broad Spectrum SPF 18 Sunscreen",
+    document_1: "Thying",
+    document_2: "liveinternet.ru",
+    document_3: "TOPIRAMATE",
+    document_4: "Ibuprofen",
+    document_5: "SIVEXTRO",
+    document_6: "SELZENTRY",
+  },
+  {
+    id: 2,
+    contract_name: "Rosamond",
+    document_type: "Anti-Bacterial Hand",
+    document_1: "Housecroft",
+    document_2: "networksolutions.com",
+    document_3: "AVINZA",
+    document_4: "Hydrocortisone Maximum Strength Plus 12 Moisturizers",
+    document_5: "Acyclovir",
+    document_6: "Fentanyl",
+  },
+  {
+    id: 3,
+    contract_name: "Shandra",
+    document_type: "SYNTHROID",
+    document_1: "Telezhkin",
+    document_2: "nsw.gov.au",
+    document_3: "Gabapentin",
+    document_4: "VENTOLIN",
+    document_5: "Up and Up acid reducer",
+    document_6: "Amoxicillin",
+  },
+  {
+    id: 4,
+    contract_name: "Krista",
+    document_type: "Isoniazid",
+    document_1: "Clench",
+    document_2: "patch.com",
+    document_3: "CEFADROXIL",
+    document_4: "VANICREAM",
+    document_5: "Lioresal",
+    document_6: "Lorazepam",
+  },
+  {
+    id: 5,
+    contract_name: "Winne",
+    document_type: "Carvedilol",
+    document_1: "Loynes",
+    document_2: "uiuc.edu",
+    document_3:
+      "Buxom Show Some Skin Weightless Foundation Broad Spectrum SPF 30",
+    document_4: "PAUL AND JOE SILKY SMOOTH FOUNDATION UV 100",
+    document_5: "Suave",
+    document_6: "Metoclopramide",
+  },
+  {
+    id: 6,
+    contract_name: "Sly",
+    document_type: "Klor-Con M",
+    document_1: "Hartley",
+    document_2: "ebay.com",
+    document_3: "Etodolac",
+    document_4: "Intervene Makeup SPF 15 Soft Sand",
+    document_5: "Avodart",
+    document_6: "Effexor",
+  },
+  {
+    id: 7,
+    contract_name: "Eva",
+    document_type: "Dermarest",
+    document_1: "Duker",
+    document_2: "unicef.org",
+    document_3: "AcneFree Clear Skin Treatments",
+    document_4: "Extra Strength Backache Relief",
+    document_5: "Oxygen",
+    document_6: "Arnica e rad. 30",
+  },
+  {
+    id: 8,
+    contract_name: "Gaspard",
+    document_type: "Metoprolol Tartrate and Hydrochlorothiazide",
+    document_1: "Mellonby",
+    document_2: "nature.com",
+    document_3: "Benzoyl Peroxide",
+    document_4: "Nadolol",
+    document_5: "Hydrocodone Bitartrate and Acetaminophen",
+    document_6: "Sterile Water",
+  },
+  {
+    id: 9,
+    contract_name: "Jefferson",
+    document_type: "Advanced DNA Medicated Collection",
+    document_1: "Trevains",
+    document_2: "naver.com",
+    document_3: "Terrasil Wart Removal",
+    document_4: "LBEL NATURAL FINISH MOISTURIZING FOUNDATION SPF 25",
+    document_5: "Clamue Healthy Fresh BB Cream Medium",
+    document_6: "Lorazepam",
+  },
+  {
+    id: 10,
+    contract_name: "Raphaela",
+    document_type: "Virustat",
+    document_1: "Baigent",
+    document_2: "purevolume.com",
+    document_3: "ARNICA MONTANA (Whole Plant)",
+    document_4: "AVINZA",
+    document_5: "Guinea Pig Epithelium",
+    document_6: "Perfecting Liquid Foundation Soft Blush",
+  },
+];
+
 export const contact = [
   {
     id: 1,
@@ -2217,6 +2592,7 @@ export const DocumentTypes = [
     document_type_name: "Georgeanne",
   },
 ];
+
 export const Specialtys = [
   {
     id: 1,
@@ -2259,6 +2635,7 @@ export const Specialtys = [
     document_Specialty: "Katalin",
   },
 ];
+
 export const Tasks = [
   {
     id: 1,
@@ -2301,6 +2678,7 @@ export const Tasks = [
     tasks_name: "Caryl",
   },
 ];
+
 export const SopOptions = [
   {
     id: 1,

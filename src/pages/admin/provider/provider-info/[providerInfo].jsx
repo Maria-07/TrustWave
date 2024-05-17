@@ -717,7 +717,9 @@ const ProviderInfo = () => {
                     <span className="label-font">Preview</span>
                   </div>
                   <div className="h-[100px] border border-gray-600 rounded p-2 flex">
-                    <img src={previewUrl} alt="Preview" className="w-[95%]" />
+                    {/* <img src={previewUrl} alt="Preview" className="w-[95%]" />
+                     */}{" "}
+                    img
                     <button
                       id="delete-btn"
                       // onClick={deletePreview}
