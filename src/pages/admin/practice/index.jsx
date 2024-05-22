@@ -4,10 +4,12 @@ import PracticeAction from "@/component/UI/Practice/PracticeAction";
 import Cards from "@/component/UI/Practice/PracticeCards/Cards";
 import { Switch, Table } from "antd";
 import React, { useState } from "react";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle, FaFilter } from "react-icons/fa";
 
 const PracticePage = () => {
   const [cardView, setCardView] = useState(false);
+  const [filter, setFilter] = useState(true);
+  const [type, setType] = useState("Card View");
 
   //! Optimized function to get dynamic filter value-text
   const generateFilterValues = (data, columnKey) => {
@@ -53,7 +55,7 @@ const PracticePage = () => {
       // Replace underscores with spaces
       dataIndex: key,
       key: key,
-      width: index === 0 ? 110 : 100, // Adjust width for the action column
+      width: index === 0 ? 110 : 80, // Adjust width for the action column
       filters: generateFilterValues(practiceData, key),
       filterSearch: true,
       filteredValue: filteredInfo[key] || null,
@@ -98,7 +100,7 @@ const PracticePage = () => {
   columns.push({
     title: "Action",
     key: "action",
-    width: 100,
+    width: 80,
     render: (text, record) => (
       <div>
         <PracticeAction record={record}></PracticeAction>
@@ -107,43 +109,85 @@ const PracticePage = () => {
   });
   return (
     <div>
-      <div className="flex items-center gap-2 justify-between flex-wrap">
-        <h1 className=" text-orange-500 text-base">Practice</h1>
-        <Switch
-          checkedChildren="Card View"
-          unCheckedChildren="List View"
-          defaultChecked
-          onClick={() => setCardView(!cardView)}
-        />
-      </div>
-
-      <div>
-        {cardView ? (
-          <>
-            <div className="h-[40%] mx-auto w-[100%] sm:w-[70%]">
-              <div className="overflow-y-scroll">
-                <Cards practiceData={practiceData}> </Cards>
-              </div>
+      <div className="grid grid-cols-1 md:grid-cols-5 ">
+        {filter && (
+          <div className="border p-3 bg-gray-50 f">
+            <div className="flex justify-between">
+              <h1 className="font-semibold text-sm ">Filters</h1>
+              {Table && (
+                <>
+                  <button
+                    onClick={clearFilters}
+                    className=" py-2 px-1  bg-white from-bg-primary text-xs  hover:bg-secondary text-secondary hover:text-white border border-secondary rounded-sm"
+                  >
+                    Clear filters
+                  </button>
+                </>
+              )}
             </div>
-          </>
-        ) : (
-          <div className=" overflow-scroll py-3 ">
-            <Table
-              //   rowKey={(record) => record.timesheet_id} //warning issue solve ar jnno unique id rowKey hisabey use hobey
-              pagination={false} //pagination dekhatey chailey just 'true' korey dilei hobey
-              size="small"
-              className=" text-xs font-normal"
-              columns={columns}
-              bordered
-              dataSource={practiceData} //Which data chunk you want to show in table
-              // For fixed header table at top
-              //   rowSelection={{
-              //     ...rowSelection,
-              //   }}
-              onChange={handleChange}
-            />
           </div>
         )}
+        <div
+          className={
+            filter
+              ? `col-span-4 bg-gray-100  rounded-l-md pl-2 py-1 border overflow-y-scroll  h-[100vh]`
+              : `col-span-5  mx-auto  ${
+                  cardView ? `w-[100%] lg:w-[80%]` : `w-[100%] `
+                }`
+          }
+        >
+          <div className="flex items-center gap-2 justify-between flex-wrap pr-1 pt-1">
+            <h1 className=" text-orange-500 text-base">Practice</h1>
+            <div className="flex items-center gap-2">
+              {" "}
+              <Switch
+                checkedChildren="Card View"
+                unCheckedChildren="List View"
+                defaultChecked
+                onClick={() => setCardView(!cardView)}
+              />
+              <div
+                onClick={() => {
+                  setFilter(!filter);
+                  // setCssType(!cssType);
+                }}
+                className="border p-1 shadow-md bg-gray-50 rounded-md"
+              >
+                <FaFilter />
+              </div>
+            </div>
+          </div>
+          {cardView ? (
+            <div className=" p-2  ">
+              <div className="overflow-y-scroll">
+                <div className="h-[40%] mx-auto w-[100%] sm:w-[70%]">
+                  <div className="overflow-y-scroll">
+                    <Cards practiceData={practiceData}> </Cards>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className=" overflow-scroll py-3 ">
+                <Table
+                  //   rowKey={(record) => record.timesheet_id} //warning issue solve ar jnno unique id rowKey hisabey use hobey
+                  pagination={false} //pagination dekhatey chailey just 'true' korey dilei hobey
+                  size="small"
+                  className=" text-xs font-normal"
+                  columns={columns}
+                  bordered
+                  dataSource={practiceData} //Which data chunk you want to show in table
+                  // For fixed header table at top
+                  //   rowSelection={{
+                  //     ...rowSelection,
+                  //   }}
+                  onChange={handleChange}
+                />
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
