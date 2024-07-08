@@ -68,7 +68,7 @@ const ReportWithAllStatus = () => {
     <div>
       {" "}
       <h1 className=" text-orange-500 text-base">Report With All Status</h1>
-      <div className="flex items-center my-2 gap-2">
+      <div className="flex items-center my-2 gap-2 flex-wrap">
         <div>
           <label className="label">
             <div className="label-font">Facility Name</div>
@@ -113,7 +113,7 @@ const ReportWithAllStatus = () => {
           <label className="label">
             <h1 className="label-font">Account Type</h1>
           </label>
-          <select className="input-border-bottom text-gray-600 rounded-sm  text-[14px] font-medium   w-full focus:outline-none">
+          <select className="input-border-bottom text-gray-600 rounded-sm  text-[14px] font-medium   w-full focus:outline-none">  
             <option value="">Select Any</option>
             <option value="2">Amro test</option>
             <option value="3">Tertiary</option>
@@ -134,7 +134,7 @@ const ReportWithAllStatus = () => {
           className="cred-button mt-[14px]"
         >
           Go
-        </button>
+        </button>  
         <button className="cred-button mt-[14px]">Export Excel</button>
       </div>
       {table && (
@@ -153,7 +153,7 @@ const ReportWithAllStatus = () => {
               //   rowSelection={{
               //     ...rowSelection,
               //   }}
-              onChange={handleChange}
+              onChange={handleChange} 
             />
           </div>
         </>

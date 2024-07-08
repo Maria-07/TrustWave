@@ -111,7 +111,7 @@ const documents = () => {
   });
   return (
     <div>
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex items-center justify-between gap-2 flex-wrap">
         <h1 className=" text-orange-500 text-base">Provider Documents</h1>
         <button
           onClick={handleAddDocument}

@@ -7,7 +7,7 @@ const SettingSidebar = ({ data }) => {
   const { icon, link_name, link } = data;
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="">
         <Link
           className={
             currentRoute === link
@@ -20,7 +20,7 @@ const SettingSidebar = ({ data }) => {
           {link_name}
         </Link>
       </div>
-      <div className="lg:hidden block">
+      {/* <div className="lg:hidden block">
         <Tooltip placement="right" title={link_name}>
           <Link
             className={
@@ -33,7 +33,7 @@ const SettingSidebar = ({ data }) => {
             <span className="text-2xl">{icon}</span>
           </Link>{" "}
         </Tooltip>
-      </div>
+      </div> */}
     </>
   );
 };

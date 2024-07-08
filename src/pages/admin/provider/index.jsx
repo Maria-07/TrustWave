@@ -138,7 +138,7 @@ const ProviderPage = () => {
   return (
     <div>
       <h1 className=" text-orange-500 text-base">Provider</h1>
-      <div className="flex gap-2 justify-between">
+      <div className="flex gap-2 justify-between flex-wrap ">
         <div className="my-5">
           <label className="label">
             <h1 className="label-font">Select Faculty</h1>
@@ -153,7 +153,7 @@ const ProviderPage = () => {
             <option value="3">Tertiary</option>
           </select>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap ">
           <Link href={`/admin/provider-online-access/123`}>
             <button className="cred-button">Online Access</button>
           </Link>
@@ -170,7 +170,7 @@ const ProviderPage = () => {
 
       {!faculty && (
         <div>
-          <div className="bg-rose-100 text-rose-500 border-[1px] border-rose-500 p-3 rounded-md text-xs">
+          <div className="my-2 bg-rose-100 text-rose-500 border-[1px] border-rose-500 p-3 rounded-md text-xs">
             INFO! Select Practice to proceed.
           </div>
         </div>

@@ -126,7 +126,7 @@ const NavbarSmallDevice = ({ handle }) => {
         </div>
         <div className="border-t-[1px] pt-2">
           <Link
-            href={"/"}
+            href={"/admin/profile"}
             className="flex gap-4 hover:bg-slate-100 bg-opacity-10 p-3"
           >
             <div className=" rounded-full p-3 bg-primary ">

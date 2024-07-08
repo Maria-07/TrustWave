@@ -68,7 +68,7 @@ const Reminder = () => {
     <div>
       {" "}
       <h1 className=" text-orange-500 text-base">Reminder</h1>
-      <div className="flex items-center my-2 gap-2">
+      <div className="flex items-center my-2 gap-2 flex-wrap">
         <div>
           <label className="label">
             <div className="label-font">Facility Name</div>

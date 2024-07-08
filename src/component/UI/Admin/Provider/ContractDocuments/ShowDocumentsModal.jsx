@@ -93,7 +93,7 @@ const ShowDocumentsModal = ({ handleClose, clicked, record }) => {
           <div className="bg-gray-200 pt-[1px] mt-3"></div>
 
           <form>
-            <div>
+            <div className="overflow-x-scroll">
               {" "}
               <Table
                 //   rowKey={(record) => record.timesheet_id} //warning issue solve ar jnno unique id rowKey hisabey use hobey
